@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "Test audio extension",
+	"description": "Test playing audio from an extension.",
+	"version": "0",
+	"author": "Chunkytofu",
+
+	 "icons": { 
+	 	"16": "icons/icon16.png",
+        "19": "icons/icon48.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png" },
+
+	"web_accessible_resources": [
+		 "esk1.mp3",
+		 "esk2.mp3",
+		 "esk3.mp3",
+		 "esk4.mp3",
+		 "esk5.mp3",
+		 "esk6.mp3",
+		 "esk7.mp3",
+		 "esk8.mp3",
+		 "esk9.mp3",
+		 "esk10.mp3"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["https://stackoverflow.com/*", "https://www.ssense.com/en-ca*", "https://www.reddit.com/r/UBC*", "https://www.nhl.com/*"],
+			"js": ["cont.js"]
+		}
+	]
+}
