@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style>
+    body {
+      height: 250px;
+      width: 450px;
+      text-align: center;
+    }
+
+    .wrapper {
+      text-align: center;
+    }
+
+    .button {
+      background-color: red;
+      /* Supreme Red */
+      border: none;
+      color: white;
+      padding: 7px 7px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: bold;
+      font-family: Helvetica, Arial, sans-serif;
+      margin: auto;
+    }
+
+    /* .button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px); 
+   } */
+
+  </style>
+</head>
+
+
+<body background="https://media.giphy.com/media/khOe2VSqgJn2Dmk2Sa/giphy.gif">
+  <!-- </td> -->
+
+  <div class="wrapper">
+    <button class="button" id="esketit" onclick="esketitGreen()"> ESKETIT</button>
+    <button class="button" id="gang"onclick="makeGreen()"> GANG </button>
+    <button class="button" id="scholar" onclick="makeGreen()">SCHOLAR </button>
+  </div>
+</body>
+
+</html>
+
+<script type="text/javascript" > 
+
+  function esketitGreen() {
+    // document.getElementById('esketit').style.backgroundColor = function(){
+    if ( document.getElementById('esketit').style.backgroundColor == 'red') {
+      document.getElementById('esketit').style.backgroundColor = 'green'; 
+    } else {
+      document.getElementById('esketit').style.backgroundColor = 'red'; 
+    }
+  }
+ 
+
+  </script>

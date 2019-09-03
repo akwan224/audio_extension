@@ -11,8 +11,6 @@
 		"48": "icons/icon48.png",
 		"128": "icons/icon128.png" },
 
-	// "options_page": "options.html",
-
 	"browser_action": {
 		"default_icon": "icons/icon128.png",
 		"default_popup": "popup.html"
@@ -20,13 +18,104 @@
 
 
 	"web_accessible_resources": [
-		"jingle.mp3",
+		"esk1.mp3",
+		"esk2.mp3",
+		"esk3.mp3",
+		"esk4.mp3",
+		"esk5.mp3",
+		"esk6.mp3",
+		"esk7.mp3",
+		"esk8.mp3",
+		"esk9.mp3",
+		"esk10.mp3",
+		"flex1.mp3",
+		"flex2.mp3",
+		"flex3.mp3",
+		"flex4.mp3",
+		"flex5.mp3",
+		"flex6.mp3",
+		"flex7.mp3",
+		"flex8.mp3",
+		"scho1.mp3",
+		"scho2.mp3",
+		"scho3.mp3",
+		"scho4.mp3",
+		"scho5.mp3",
+		"scho6.mp3",
+		"scho7.mp3",
+		"scho8.mp3",
+		"scho9.mp3",
+		"scho10.mp3",
+		"scho11.mp3",
+		"scho12.mp3",
+		"scho13.mp3",
+		"scho14.mp3",
+		"scho15.mp3",
+		"scho16.mp3",
+		"scho17.mp3",
+		"soc1.mp3",
+		"soc2.mp3",
+		"soc3.mp3",
+		"soc4.mp3",
+		"soc5.mp3",
+		"soc6.mp3",
+		"soc7.mp3",
+		"soc8.mp3",
+		"soc9.mp3",
+		"soc10.mp3",
+		"soc11.mp3",
+		"soc12.mp3",
+		"soc13.mp3",
+		"soc14.mp3",
+		"soc15.mp3",
+		"soc16.mp3",
+		"soc17.mp3",
+		"gang1.mp3",
+		"gang2.mp3",
+		"gang3.mp3",
+		"gang4.mp3",
+		"gang5.mp3",
+		"gang6.mp3",
+		"gang7.mp3",
+		"gang8.mp3",
+		"gang9.mp3",
+		"gang10.mp3",
+		"gang11.mp3",
+		"gang12.mp3",
+		"gang13.mp3",
+		"gang14.mp3",
+		"gang15.mp3",
+		"gang16.mp3",
+		"gang17.mp3",
+		"gang18.mp3",
+		"gang19.mp3",
+		"gang20.mp3"
 	],
+
+	// "background": {
+	// 	"scripts": ["js/background.js"]
+	//   },
 
 	"content_scripts": [
 		{
-			"matches": ["https://stackoverflow.com/*", "https://www.ssense.com/en-ca*", "https://www.reddit.com/r/UBC*", "https://www.nhl.com/*"],
-			"js": ["cont.js"]
+			"matches": [
+				"http://*/*",
+        		"https://*/*"
+			],
+			"js": [
+				"cont.js"
+			], 
+			"run_at": "document_start"
 		}
-	]
+	],
+
+	"permissions": [
+		"*://*/*",
+		"tabs",
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"webNavigation"
+	  ],
+	  "incognito": "split"
 }
